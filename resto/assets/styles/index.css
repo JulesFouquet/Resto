@@ -1,0 +1,330 @@
+@font-face {
+  font-family: "allura";
+  src: url(../../assets/fonts/Allura/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../../assets/fonts/Roboto/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(37, 36, 36);
+}
+
+span {
+  font-family: allura, serif;
+  color: rgb(139, 92, 37);
+}
+
+h1, h2, h3 {
+  font-family: Poppins, sans-serif;
+  text-transform: uppercase;
+}
+
+header {
+  height: 100vh;
+  background: url(../../assets/img/bg-slider-06.jpg) center/cover;
+}
+header nav {
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  align-items: center;
+  color: rgb(243, 243, 243);
+  height: 80px;
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+}
+header nav span {
+  color: rgb(243, 243, 243);
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+header nav ul {
+  display: flex;
+}
+header nav .middle ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav .middle li {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+header nav .logo li {
+  margin: 0 10px;
+}
+header nav .logo ul {
+  justify-content: center;
+}
+header .welcome {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 690px;
+}
+header .welcome span {
+  font-size: 3.7rem;
+  position: absolute;
+  top: 200px;
+}
+header .welcome h1 {
+  color: rgb(243, 243, 243);
+  font-size: 4.8rem;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+header .welcome img {
+  width: 34px;
+  margin-bottom: 30px;
+}
+header .welcome p {
+  color: rgb(243, 243, 243);
+  font-size: 1rem;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  margin-top: 20px;
+}
+
+main .discovery {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 450px;
+  background: rgb(248, 248, 244);
+}
+main .discovery-left {
+  margin: 15px;
+  border: 1px dashed rgb(88, 78, 18);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .discovery-left span {
+  position: absolute;
+  font-size: 2.1rem;
+  top: 18px;
+}
+main .discovery-left .topimg {
+  margin: 20px 0 30px;
+}
+main .discovery-left p {
+  margin: 0 20px 40px;
+  font-family: Roboto, sans-serif;
+}
+main .discovery-left .avatar img {
+  height: 70px;
+  border-radius: 50px;
+}
+main .discovery-left h3 {
+  text-transform: none;
+  font-size: 0.9rem;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  padding-top: 10px;
+}
+main .discovery-left h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: rgb(192, 192, 192);
+  font-family: Roboto, sans-serif;
+}
+main .discovery-right {
+  background: url(../../assets/img/store-01.jpg) center;
+}
+main .menus {
+  background: url(../../assets/img/bg-menu-01.jpg) no-repeat bottom;
+  background-size: 100% 60%;
+  max-height: 1000px;
+  bottom: 0;
+  padding-bottom: 100px;
+}
+main .menus .menus-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+main .menus .menus-top span {
+  font-size: 2.3rem;
+  margin: 20px 0 30px;
+}
+main .menus ul {
+  max-width: 700px;
+  display: flex;
+  height: 25px;
+  justify-content: space-around;
+  margin: 0 auto;
+  color: rgb(243, 243, 243);
+  font-family: Roboto, sans-serif;
+}
+main .menus ul li {
+  border-bottom: 1px solid rgb(243, 243, 243);
+}
+main .menus .menus-img {
+  max-width: 800px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+  background-color: rgb(243, 243, 243);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px -3px rgb(156, 96, 46);
+}
+main .menus .menus-img .row {
+  display: flex;
+  margin: 0 30px 0 10px;
+  padding: 20px 0;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px dashed rgb(192, 192, 192);
+}
+main .menus .menus-img .row div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 10px;
+  font-size: 0.9rem;
+  font-family: Roboto, sans-serif;
+}
+main .menus .menus-img .row div h5 {
+  text-transform: uppercase;
+}
+main .menus .menus-img .row img {
+  border-radius: 50px;
+  text-align: left;
+}
+main .menus .menus-img .row span {
+  width: 20%;
+  text-align: right;
+  font-family: Poppins, sans-serif;
+}
+main .hourly {
+  max-width: 1000px;
+  height: 500px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+main .hourly .open {
+  background: rgb(0, 0, 0);
+  position: relative;
+  padding: 20px;
+}
+main .hourly .open div {
+  width: 100%;
+  height: 100%;
+  border: 1px dashed rgb(192, 192, 192);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .hourly .open span {
+  position: absolute;
+  font-size: 2.1rem;
+  top: 35px;
+}
+main .hourly .open h2 {
+  color: rgb(243, 243, 243);
+}
+main .hourly .open h6 {
+  color: rgb(139, 92, 37);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-family: Poppins, sans-serif;
+}
+main .hourly .open p {
+  color: rgb(243, 243, 243);
+  font-family: Roboto, sans-serif;
+  font-size: 0.9rem;
+  margin: 10px 0 40px;
+}
+main .hourly .open img {
+  padding: 20px 0 40px;
+}
+main .hourly .reservation {
+  background: rgb(243, 243, 243);
+  position: relative;
+}
+main .hourly .reservation span {
+  position: absolute;
+  top: 55px;
+  right: 270px;
+  font-size: 2.6rem;
+}
+main .hourly .reservation h2 {
+  padding: 90px 0 30px;
+  font-size: 2rem;
+}
+main .hourly .reservation img {
+  padding-bottom: 40px;
+}
+main .hourly .reservation .all-form {
+  height: 150px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+}
+main .hourly .reservation .all-form .dates {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin-bottom: 20px;
+}
+main .hourly .reservation .all-form .dates div {
+  padding: 0 20px 0 0;
+  height: 30px;
+}
+main .hourly .reservation .all-form .dates div input, main .hourly .reservation .all-form .dates div select {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+}
+main .hourly .reservation .all-form .dates div input:focus, main .hourly .reservation .all-form .dates div select:focus {
+  outline: none;
+}
+main .hourly .reservation .all-form .form {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+main .hourly .reservation .all-form .form div {
+  padding: 0 20px 0 0;
+  margin: 20px 0;
+  height: 30px;
+}
+main .hourly .reservation .all-form .form input {
+  height: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  font-family: Roboto, sans-serif;
+}
+main .hourly .reservation .all-form .form input:focus {
+  outline: none;
+}/*# sourceMappingURL=index.css.map */
