@@ -120,7 +120,10 @@ main .discovery-left {
 main .discovery-left span {
   position: absolute;
   font-size: 2.1rem;
+  width: 100%;
   top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 main .discovery-left .topimg {
   margin: 20px 0 30px;
@@ -222,7 +225,7 @@ main .menus .menus-img .row span {
   font-family: Poppins, sans-serif;
 }
 main .hourly {
-  max-width: 1000px;
+  max-width: 1100px;
   height: 500px;
   margin: 50px auto;
   display: grid;
@@ -271,8 +274,9 @@ main .hourly .reservation {
 }
 main .hourly .reservation span {
   position: absolute;
-  top: 55px;
-  right: 270px;
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 2.6rem;
 }
 main .hourly .reservation h2 {
@@ -318,13 +322,178 @@ main .hourly .reservation .all-form .form div {
   margin: 20px 0;
   height: 30px;
 }
-main .hourly .reservation .all-form .form input {
+main .hourly .reservation .all-form .form div input {
+  width: 100%;
   height: 100%;
   background: none;
   border: none;
   border-bottom: 1px solid rgb(197, 197, 197);
   font-family: Roboto, sans-serif;
 }
-main .hourly .reservation .all-form .form input:focus {
+main .hourly .reservation .all-form .form div input:focus {
   outline: none;
+}
+main .hourly input[type=submit] {
+  background: rgb(17, 17, 17);
+  color: rgb(243, 243, 243);
+  padding: 15px 28px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: Poppins, sans-serif;
+  border-radius: 25px;
+  border: none;
+}
+
+.upcoming {
+  position: relative;
+  margin: 10px 0 120px;
+}
+.upcoming .up {
+  margin: 80px 0 40;
+}
+.upcoming .up span {
+  position: absolute;
+  width: 100%;
+  top: 14px;
+  font-size: 2.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.upcoming .up h2 {
+  color: rgb(243, 243, 243);
+  font-size: 2rem;
+  padding-top: 50px;
+}
+.upcoming .up img {
+  margin: 30px 0;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: 62% 38%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "event1 event3" "event2 event3";
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 18px;
+}
+.events .info-container {
+  width: 90%;
+  height: 60%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.events .info-container span {
+  margin: 20px 0 0;
+  font-family: Roboto, sans-serif;
+  color: rgb(17, 17, 17);
+  font-size: 1.3rem;
+}
+.events .info-container p {
+  color: rgb(201, 201, 201);
+  font-family: Roboto, sans-serif;
+}
+.events .info-container h6 {
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+.events .event1 {
+  display: grid;
+  grid-template-columns: 39% 61%;
+  width: 100%;
+  background: rgb(243, 243, 243);
+}
+.events .event1 .event1bg {
+  background: url(../../assets/img/event-01.jpg) center/cover;
+  padding: 50px;
+}
+.events .event1 .event1bg .date-container {
+  background: #21201e;
+  height: 86px;
+  width: 86px;
+  margin: 0 auto;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 22px;
+}
+.events .event1 .event1bg .date-container h4 {
+  font-size: 1.7rem;
+}
+.events .event1 .event1bg .date-container p {
+  font-family: Roboto, sans-serif;
+}
+.events .event2 {
+  display: grid;
+  grid-template-columns: 39% 61%;
+  width: 100%;
+  background: rgb(243, 243, 243);
+}
+.events .event2 .event2bg {
+  background: url(../../assets/img/event-02.jpg) center/cover;
+  padding: 50px;
+}
+.events .event2 .event2bg .date-container {
+  background: #21201e;
+  height: 86px;
+  width: 86px;
+  margin: 0 auto;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 22px;
+}
+.events .event2 .event2bg .date-container h4 {
+  font-size: 1.7rem;
+}
+.events .event2 .event2bg .date-container p {
+  font-family: Roboto, sans-serif;
+}
+.events .event3 {
+  grid-area: event3;
+}
+.events .event3 .imgbg3 {
+  width: 100%;
+  height: 100%;
+  background: url(../../assets/img/event-03.jpg);
+  padding: 25px;
+}
+.events .event3 .imgbg3 .int-event3 {
+  background: rgb(243, 243, 243);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.events .event3 .imgbg3 .int-event3 h6, .events .event3 .imgbg3 .int-event3 p {
+  width: 100%;
+  justify-content: center;
+}
+.events .event3 .imgbg3 .int-event3 .date-container {
+  background: #21201e;
+  height: 106px;
+  width: 86px;
+  margin: 0 auto;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 22px;
+}
+.events .event3 .imgbg3 .int-event3 .date-container h4 {
+  font-size: 1.7rem;
+}
+.events .event3 .imgbg3 .int-event3 .date-container p {
+  font-family: Roboto, sans-serif;
 }/*# sourceMappingURL=index.css.map */
